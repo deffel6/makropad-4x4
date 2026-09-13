@@ -90,7 +90,13 @@ Zapfen passt zwar hinein, sitzt aber lose.
 
 ## Firmware
 
-`firmware/keypad4x4/` nach `keyboards/` in QMK oder vial-qmk kopieren, dann:
+Wer nicht selbst übersetzen will, nimmt die fertigen Dateien aus
+[`firmware/fertig/`](firmware/fertig/) und flasht sie mit der
+[QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases) — dafür braucht es
+weder QMK noch ein Terminal. Die Anleitung dazu liegt im selben Ordner.
+
+Selbst bauen: `firmware/keypad4x4/` nach `keyboards/` in QMK oder vial-qmk
+kopieren, dann:
 
 ```
 make keypad4x4:default          # feste Belegung
