@@ -33,8 +33,15 @@ for b in blocks:
     lib = b.split('"')[1]
     m = re.search(r'\(at ([\d.-]+) ([\d.-]+)(?: ([\d.-]+))?\)', b)
     ref = re.search(r'reference "([^"]+)"', b)
+    ref = ref.group(1) if ref else ""
+    # Die Anschlusspunkte tragen als Referenz J1..J8, aufgedruckt ist aber
+    # R3..C3. Im Bild ist die aufgedruckte Beschriftung die nuetzliche, denn
+    # nach ihr sucht man spaeter auf der Platine.
+    lab = re.search(r'fp_text user "([^"]+)"', b)
+    if lab:
+        ref = lab.group(1)
     fps.append((lib, float(m.group(1)), float(m.group(2)),
-                float(m.group(3) or 0), ref.group(1) if ref else ""))
+                float(m.group(3) or 0), ref))
 
 # ── Leiterbahnen ─────────────────────────────────────────────────────────
 segs = [(float(a), float(b), float(c), float(d), l) for a, b, c, d, l in re.findall(

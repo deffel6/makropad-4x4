@@ -191,28 +191,28 @@
 <rect class="dio" x="102.515" y="100.375" width="1.4" height="4.6" rx="0.3"/>
 <circle class="lot" cx="33.620" cy="25.000" r="1.3"/>
 <circle class="hole" cx="33.620" cy="25.000" r="0.65"/>
-<text class="ref" x="33.620" y="22.600">J4</text>
+<text class="ref" x="33.620" y="22.600">R0</text>
 <circle class="lot" cx="31.080" cy="25.000" r="1.3"/>
 <circle class="hole" cx="31.080" cy="25.000" r="0.65"/>
-<text class="ref" x="31.080" y="22.600">J3</text>
+<text class="ref" x="31.080" y="22.600">R1</text>
 <circle class="lot" cx="28.540" cy="25.000" r="1.3"/>
 <circle class="hole" cx="28.540" cy="25.000" r="0.65"/>
-<text class="ref" x="28.540" y="22.600">J2</text>
+<text class="ref" x="28.540" y="22.600">R2</text>
 <circle class="lot" cx="26.000" cy="25.000" r="1.3"/>
 <circle class="hole" cx="26.000" cy="25.000" r="0.65"/>
-<text class="ref" x="26.000" y="22.600">J1</text>
+<text class="ref" x="26.000" y="22.600">R3</text>
 <circle class="lot" cx="36.160" cy="25.000" r="1.3"/>
 <circle class="hole" cx="36.160" cy="25.000" r="0.65"/>
-<text class="ref" x="36.160" y="22.600">J5</text>
+<text class="ref" x="36.160" y="22.600">C0</text>
 <circle class="lot" cx="38.700" cy="25.000" r="1.3"/>
 <circle class="hole" cx="38.700" cy="25.000" r="0.65"/>
-<text class="ref" x="38.700" y="22.600">J6</text>
+<text class="ref" x="38.700" y="22.600">C1</text>
 <circle class="lot" cx="41.240" cy="25.000" r="1.3"/>
 <circle class="hole" cx="41.240" cy="25.000" r="0.65"/>
-<text class="ref" x="41.240" y="22.600">J7</text>
+<text class="ref" x="41.240" y="22.600">C2</text>
 <circle class="lot" cx="43.780" cy="25.000" r="1.3"/>
 <circle class="hole" cx="43.780" cy="25.000" r="0.65"/>
-<text class="ref" x="43.780" y="22.600">J8</text>
+<text class="ref" x="43.780" y="22.600">C3</text>
 <circle class="hole" cx="23.000" cy="23.000" r="1.1"/>
 <circle class="hole" cx="113.200" cy="23.000" r="1.1"/>
 <circle class="hole" cx="23.000" cy="109.200" r="1.1"/>
