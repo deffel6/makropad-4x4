@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="14.0 14.0 108.2 104.2" width="433" height="417">
+<style>text{font:2.2px system-ui,sans-serif;fill:#8b949e;text-anchor:middle}.ref{font:1.9px system-ui,sans-serif;fill:#6e7681}.edge{fill:#16853d14;stroke:#3fb950;stroke-width:.35}.key{fill:none;stroke:#58a6ff;stroke-width:.25}.pad{fill:#d29922}.hole{fill:#ffffff;stroke:#8b949e;stroke-width:.15}.dio{fill:#f8514933;stroke:#f85149;stroke-width:.2}.lot{fill:#d29922;stroke:#8b6914;stroke-width:.2}.ftrace{stroke:#f0883e;stroke-width:.25;fill:none}.btrace{stroke:#388bfd;stroke-width:.25;fill:none}</style>
+<path class="edge" d="M23.000 20.000 L113.200 20.000 M116.200 23.000 L116.200 109.200 M113.200 112.200 L23.000 112.200 M20.000 109.200 L20.000 23.000 M20.000 23.000 A3 3 0 0 1 23.000 20.000 M113.200 20.000 A3 3 0 0 1 116.200 23.000 M116.200 109.200 A3 3 0 0 1 113.200 112.200 M23.000 112.200 A3 3 0 0 1 20.000 109.200 "/>
+<line class="ftrace" x1="39.715" y1="36.985" x2="39.715" y2="56.035"/>
+<line class="ftrace" x1="39.715" y1="56.035" x2="39.715" y2="75.085"/>
+<line class="ftrace" x1="39.715" y1="75.085" x2="39.715" y2="94.135"/>
+<line class="ftrace" x1="58.765" y1="36.985" x2="58.765" y2="56.035"/>
+<line class="ftrace" x1="58.765" y1="56.035" x2="58.765" y2="75.085"/>
+<line class="ftrace" x1="58.765" y1="75.085" x2="58.765" y2="94.135"/>
+<line class="ftrace" x1="77.815" y1="36.985" x2="77.815" y2="56.035"/>
+<line class="ftrace" x1="77.815" y1="56.035" x2="77.815" y2="75.085"/>
+<line class="ftrace" x1="77.815" y1="75.085" x2="77.815" y2="94.135"/>
+<line class="ftrace" x1="96.865" y1="36.985" x2="96.865" y2="56.035"/>
+<line class="ftrace" x1="96.865" y1="56.035" x2="96.865" y2="75.085"/>
+<line class="ftrace" x1="96.865" y1="75.085" x2="96.865" y2="94.135"/>
+<line class="btrace" x1="46.065" y1="34.445" x2="46.065" y2="43.875"/>
+<line class="btrace" x1="65.115" y1="34.445" x2="65.115" y2="43.875"/>
+<line class="btrace" x1="84.165" y1="34.445" x2="84.165" y2="43.875"/>
+<line class="btrace" x1="103.215" y1="34.445" x2="103.215" y2="43.875"/>
+<line class="btrace" x1="46.065" y1="53.495" x2="46.065" y2="62.925"/>
+<line class="btrace" x1="65.115" y1="53.495" x2="65.115" y2="62.925"/>
+<line class="btrace" x1="84.165" y1="53.495" x2="84.165" y2="62.925"/>
+<line class="btrace" x1="103.215" y1="53.495" x2="103.215" y2="62.925"/>
+<line class="btrace" x1="46.065" y1="72.545" x2="46.065" y2="81.975"/>
+<line class="btrace" x1="65.115" y1="72.545" x2="65.115" y2="81.975"/>
+<line class="btrace" x1="84.165" y1="72.545" x2="84.165" y2="81.975"/>
+<line class="btrace" x1="103.215" y1="72.545" x2="103.215" y2="81.975"/>
+<line class="btrace" x1="46.065" y1="91.595" x2="46.065" y2="101.025"/>
+<line class="btrace" x1="65.115" y1="91.595" x2="65.115" y2="101.025"/>
+<line class="btrace" x1="84.165" y1="91.595" x2="84.165" y2="101.025"/>
+<line class="btrace" x1="103.215" y1="91.595" x2="103.215" y2="101.025"/>
+<line class="btrace" x1="46.065" y1="47.175" x2="65.115" y2="47.175"/>
+<line class="btrace" x1="65.115" y1="47.175" x2="84.165" y2="47.175"/>
+<line class="btrace" x1="84.165" y1="47.175" x2="103.215" y2="47.175"/>
+<line class="btrace" x1="46.065" y1="66.225" x2="65.115" y2="66.225"/>
+<line class="btrace" x1="65.115" y1="66.225" x2="84.165" y2="66.225"/>
+<line class="btrace" x1="84.165" y1="66.225" x2="103.215" y2="66.225"/>
+<line class="btrace" x1="46.065" y1="85.275" x2="65.115" y2="85.275"/>
+<line class="btrace" x1="65.115" y1="85.275" x2="84.165" y2="85.275"/>
+<line class="btrace" x1="84.165" y1="85.275" x2="103.215" y2="85.275"/>
+<line class="btrace" x1="46.065" y1="104.325" x2="65.115" y2="104.325"/>
+<line class="btrace" x1="65.115" y1="104.325" x2="84.165" y2="104.325"/>
+<line class="btrace" x1="84.165" y1="104.325" x2="103.215" y2="104.325"/>
+<line class="btrace" x1="33.620" y1="25.000" x2="33.620" y2="47.175"/>
+<line class="btrace" x1="33.620" y1="47.175" x2="46.065" y2="47.175"/>
+<line class="btrace" x1="31.080" y1="25.000" x2="31.080" y2="66.225"/>
+<line class="btrace" x1="31.080" y1="66.225" x2="46.065" y2="66.225"/>
+<line class="btrace" x1="28.540" y1="25.000" x2="28.540" y2="85.275"/>
+<line class="btrace" x1="28.540" y1="85.275" x2="46.065" y2="85.275"/>
+<line class="btrace" x1="26.000" y1="25.000" x2="26.000" y2="104.325"/>
+<line class="btrace" x1="26.000" y1="104.325" x2="46.065" y2="104.325"/>
+<line class="ftrace" x1="36.160" y1="25.000" x2="36.160" y2="29.200"/>
+<line class="ftrace" x1="36.160" y1="29.200" x2="39.715" y2="29.200"/>
+<line class="ftrace" x1="39.715" y1="29.200" x2="39.715" y2="36.985"/>
+<line class="ftrace" x1="38.700" y1="25.000" x2="38.700" y2="28.200"/>
+<line class="ftrace" x1="38.700" y1="28.200" x2="58.765" y2="28.200"/>
+<line class="ftrace" x1="58.765" y1="28.200" x2="58.765" y2="36.985"/>
+<line class="ftrace" x1="41.240" y1="25.000" x2="41.240" y2="27.200"/>
+<line class="ftrace" x1="41.240" y1="27.200" x2="77.815" y2="27.200"/>
+<line class="ftrace" x1="77.815" y1="27.200" x2="77.815" y2="36.985"/>
+<line class="ftrace" x1="43.780" y1="25.000" x2="43.780" y2="26.200"/>
+<line class="ftrace" x1="43.780" y1="26.200" x2="96.865" y2="26.200"/>
+<line class="ftrace" x1="96.865" y1="26.200" x2="96.865" y2="36.985"/>
+<rect class="key" x="34.000" y="30.000" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="43.525" cy="39.525" r="2"/>
+<circle class="hole" cx="38.445" cy="39.525" r="0.875"/>
+<circle class="hole" cx="48.605" cy="39.525" r="0.875"/>
+<circle class="pad" cx="39.715" cy="36.985" r="1.25"/>
+<circle class="pad" cx="46.065" cy="34.445" r="1.25"/>
+<text class="ref" x="43.525" y="48.125">SW1</text>
+<rect class="dio" x="45.365" y="43.225" width="1.4" height="4.6" rx="0.3"/>
+<rect class="key" x="53.050" y="30.000" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="62.575" cy="39.525" r="2"/>
+<circle class="hole" cx="57.495" cy="39.525" r="0.875"/>
+<circle class="hole" cx="67.655" cy="39.525" r="0.875"/>
+<circle class="pad" cx="58.765" cy="36.985" r="1.25"/>
+<circle class="pad" cx="65.115" cy="34.445" r="1.25"/>
+<text class="ref" x="62.575" y="48.125">SW2</text>
+<rect class="dio" x="64.415" y="43.225" width="1.4" height="4.6" rx="0.3"/>
+<rect class="key" x="72.100" y="30.000" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="81.625" cy="39.525" r="2"/>
+<circle class="hole" cx="76.545" cy="39.525" r="0.875"/>
+<circle class="hole" cx="86.705" cy="39.525" r="0.875"/>
+<circle class="pad" cx="77.815" cy="36.985" r="1.25"/>
+<circle class="pad" cx="84.165" cy="34.445" r="1.25"/>
+<text class="ref" x="81.625" y="48.125">SW3</text>
+<rect class="dio" x="83.465" y="43.225" width="1.4" height="4.6" rx="0.3"/>
+<rect class="key" x="91.150" y="30.000" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="100.675" cy="39.525" r="2"/>
+<circle class="hole" cx="95.595" cy="39.525" r="0.875"/>
+<circle class="hole" cx="105.755" cy="39.525" r="0.875"/>
+<circle class="pad" cx="96.865" cy="36.985" r="1.25"/>
+<circle class="pad" cx="103.215" cy="34.445" r="1.25"/>
+<text class="ref" x="100.675" y="48.125">SW4</text>
+<rect class="dio" x="102.515" y="43.225" width="1.4" height="4.6" rx="0.3"/>
+<rect class="key" x="34.000" y="49.050" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="43.525" cy="58.575" r="2"/>
+<circle class="hole" cx="38.445" cy="58.575" r="0.875"/>
+<circle class="hole" cx="48.605" cy="58.575" r="0.875"/>
+<circle class="pad" cx="39.715" cy="56.035" r="1.25"/>
+<circle class="pad" cx="46.065" cy="53.495" r="1.25"/>
+<text class="ref" x="43.525" y="67.175">SW5</text>
+<rect class="dio" x="45.365" y="62.275" width="1.4" height="4.6" rx="0.3"/>
+<rect class="key" x="53.050" y="49.050" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="62.575" cy="58.575" r="2"/>
+<circle class="hole" cx="57.495" cy="58.575" r="0.875"/>
+<circle class="hole" cx="67.655" cy="58.575" r="0.875"/>
+<circle class="pad" cx="58.765" cy="56.035" r="1.25"/>
+<circle class="pad" cx="65.115" cy="53.495" r="1.25"/>
+<text class="ref" x="62.575" y="67.175">SW6</text>
+<rect class="dio" x="64.415" y="62.275" width="1.4" height="4.6" rx="0.3"/>
+<rect class="key" x="72.100" y="49.050" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="81.625" cy="58.575" r="2"/>
+<circle class="hole" cx="76.545" cy="58.575" r="0.875"/>
+<circle class="hole" cx="86.705" cy="58.575" r="0.875"/>
+<circle class="pad" cx="77.815" cy="56.035" r="1.25"/>
+<circle class="pad" cx="84.165" cy="53.495" r="1.25"/>
+<text class="ref" x="81.625" y="67.175">SW7</text>
+<rect class="dio" x="83.465" y="62.275" width="1.4" height="4.6" rx="0.3"/>
+<rect class="key" x="91.150" y="49.050" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="100.675" cy="58.575" r="2"/>
+<circle class="hole" cx="95.595" cy="58.575" r="0.875"/>
+<circle class="hole" cx="105.755" cy="58.575" r="0.875"/>
+<circle class="pad" cx="96.865" cy="56.035" r="1.25"/>
+<circle class="pad" cx="103.215" cy="53.495" r="1.25"/>
+<text class="ref" x="100.675" y="67.175">SW8</text>
+<rect class="dio" x="102.515" y="62.275" width="1.4" height="4.6" rx="0.3"/>
+<rect class="key" x="34.000" y="68.100" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="43.525" cy="77.625" r="2"/>
+<circle class="hole" cx="38.445" cy="77.625" r="0.875"/>
+<circle class="hole" cx="48.605" cy="77.625" r="0.875"/>
+<circle class="pad" cx="39.715" cy="75.085" r="1.25"/>
+<circle class="pad" cx="46.065" cy="72.545" r="1.25"/>
+<text class="ref" x="43.525" y="86.225">SW9</text>
+<rect class="dio" x="45.365" y="81.325" width="1.4" height="4.6" rx="0.3"/>
+<rect class="key" x="53.050" y="68.100" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="62.575" cy="77.625" r="2"/>
+<circle class="hole" cx="57.495" cy="77.625" r="0.875"/>
+<circle class="hole" cx="67.655" cy="77.625" r="0.875"/>
+<circle class="pad" cx="58.765" cy="75.085" r="1.25"/>
+<circle class="pad" cx="65.115" cy="72.545" r="1.25"/>
+<text class="ref" x="62.575" y="86.225">SW10</text>
+<rect class="dio" x="64.415" y="81.325" width="1.4" height="4.6" rx="0.3"/>
+<rect class="key" x="72.100" y="68.100" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="81.625" cy="77.625" r="2"/>
+<circle class="hole" cx="76.545" cy="77.625" r="0.875"/>
+<circle class="hole" cx="86.705" cy="77.625" r="0.875"/>
+<circle class="pad" cx="77.815" cy="75.085" r="1.25"/>
+<circle class="pad" cx="84.165" cy="72.545" r="1.25"/>
+<text class="ref" x="81.625" y="86.225">SW11</text>
+<rect class="dio" x="83.465" y="81.325" width="1.4" height="4.6" rx="0.3"/>
+<rect class="key" x="91.150" y="68.100" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="100.675" cy="77.625" r="2"/>
+<circle class="hole" cx="95.595" cy="77.625" r="0.875"/>
+<circle class="hole" cx="105.755" cy="77.625" r="0.875"/>
+<circle class="pad" cx="96.865" cy="75.085" r="1.25"/>
+<circle class="pad" cx="103.215" cy="72.545" r="1.25"/>
+<text class="ref" x="100.675" y="86.225">SW12</text>
+<rect class="dio" x="102.515" y="81.325" width="1.4" height="4.6" rx="0.3"/>
+<rect class="key" x="34.000" y="87.150" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="43.525" cy="96.675" r="2"/>
+<circle class="hole" cx="38.445" cy="96.675" r="0.875"/>
+<circle class="hole" cx="48.605" cy="96.675" r="0.875"/>
+<circle class="pad" cx="39.715" cy="94.135" r="1.25"/>
+<circle class="pad" cx="46.065" cy="91.595" r="1.25"/>
+<text class="ref" x="43.525" y="105.275">SW13</text>
+<rect class="dio" x="45.365" y="100.375" width="1.4" height="4.6" rx="0.3"/>
+<rect class="key" x="53.050" y="87.150" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="62.575" cy="96.675" r="2"/>
+<circle class="hole" cx="57.495" cy="96.675" r="0.875"/>
+<circle class="hole" cx="67.655" cy="96.675" r="0.875"/>
+<circle class="pad" cx="58.765" cy="94.135" r="1.25"/>
+<circle class="pad" cx="65.115" cy="91.595" r="1.25"/>
+<text class="ref" x="62.575" y="105.275">SW14</text>
+<rect class="dio" x="64.415" y="100.375" width="1.4" height="4.6" rx="0.3"/>
+<rect class="key" x="72.100" y="87.150" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="81.625" cy="96.675" r="2"/>
+<circle class="hole" cx="76.545" cy="96.675" r="0.875"/>
+<circle class="hole" cx="86.705" cy="96.675" r="0.875"/>
+<circle class="pad" cx="77.815" cy="94.135" r="1.25"/>
+<circle class="pad" cx="84.165" cy="91.595" r="1.25"/>
+<text class="ref" x="81.625" y="105.275">SW15</text>
+<rect class="dio" x="83.465" y="100.375" width="1.4" height="4.6" rx="0.3"/>
+<rect class="key" x="91.150" y="87.150" width="19.05" height="19.05" rx="1"/>
+<circle class="hole" cx="100.675" cy="96.675" r="2"/>
+<circle class="hole" cx="95.595" cy="96.675" r="0.875"/>
+<circle class="hole" cx="105.755" cy="96.675" r="0.875"/>
+<circle class="pad" cx="96.865" cy="94.135" r="1.25"/>
+<circle class="pad" cx="103.215" cy="91.595" r="1.25"/>
+<text class="ref" x="100.675" y="105.275">SW16</text>
+<rect class="dio" x="102.515" y="100.375" width="1.4" height="4.6" rx="0.3"/>
+<circle class="lot" cx="33.620" cy="25.000" r="1.3"/>
+<circle class="hole" cx="33.620" cy="25.000" r="0.65"/>
+<text class="ref" x="33.620" y="22.600">J4</text>
+<circle class="lot" cx="31.080" cy="25.000" r="1.3"/>
+<circle class="hole" cx="31.080" cy="25.000" r="0.65"/>
+<text class="ref" x="31.080" y="22.600">J3</text>
+<circle class="lot" cx="28.540" cy="25.000" r="1.3"/>
+<circle class="hole" cx="28.540" cy="25.000" r="0.65"/>
+<text class="ref" x="28.540" y="22.600">J2</text>
+<circle class="lot" cx="26.000" cy="25.000" r="1.3"/>
+<circle class="hole" cx="26.000" cy="25.000" r="0.65"/>
+<text class="ref" x="26.000" y="22.600">J1</text>
+<circle class="lot" cx="36.160" cy="25.000" r="1.3"/>
+<circle class="hole" cx="36.160" cy="25.000" r="0.65"/>
+<text class="ref" x="36.160" y="22.600">J5</text>
+<circle class="lot" cx="38.700" cy="25.000" r="1.3"/>
+<circle class="hole" cx="38.700" cy="25.000" r="0.65"/>
+<text class="ref" x="38.700" y="22.600">J6</text>
+<circle class="lot" cx="41.240" cy="25.000" r="1.3"/>
+<circle class="hole" cx="41.240" cy="25.000" r="0.65"/>
+<text class="ref" x="41.240" y="22.600">J7</text>
+<circle class="lot" cx="43.780" cy="25.000" r="1.3"/>
+<circle class="hole" cx="43.780" cy="25.000" r="0.65"/>
+<text class="ref" x="43.780" y="22.600">J8</text>
+<circle class="hole" cx="23.000" cy="23.000" r="1.1"/>
+<circle class="hole" cx="113.200" cy="23.000" r="1.1"/>
+<circle class="hole" cx="23.000" cy="109.200" r="1.1"/>
+<circle class="hole" cx="113.200" cy="109.200" r="1.1"/>
+</svg>

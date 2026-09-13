@@ -1,0 +1,5 @@
+(footprint "M2" (version 20221018) (generator "generate_pcb.py")
+  (layer "F.Cu")
+  (attr through_hole)
+  (pad "" np_thru_hole circle (at 0 0) (size 2.2 2.2) (drill 2.2) (layers "*.Cu" "*.Mask") (tstamp 39a30cb7-9048-4692-b062-dc45288e0c48))
+)
