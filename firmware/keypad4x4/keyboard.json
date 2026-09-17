@@ -1,6 +1,6 @@
 {
     "manufacturer": "det",
-    "keyboard_name": "keypad4x4",
+    "keyboard_name": "Agent Thilo 4*4 Matrix",
     "maintainer": "deffel6",
     "processor": "atmega32u4",
     "bootloader": "caterina",

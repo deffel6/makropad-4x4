@@ -115,7 +115,7 @@ Beide Fassungen sind übersetzt und geprüft:
 | | Größe | Auslastung |
 |---|---|---|
 | default | 15.826 Bytes | 55 % |
-| vial | 28.212 Bytes | 98 % |
+| vial | 28.246 Bytes | 98 % |
 
 Die Vial-Fassung passt nur knapp: Der Pro Micro hat nach Abzug des
 Bootloaders 28.672 Bytes, und Vial bringt viel mit. In
