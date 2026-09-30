@@ -117,6 +117,24 @@ Zahl der Ebenen auf drei begrenzt. **Für Erweiterungen ist kein Platz mehr.**
 Wer mehr will, nimmt ein RP2040-Modul in Pro-Micro-Bauform — es passt auf
 dieselben Lötpunkte und hat das Sechzehnfache an Speicher.
 
+### ZMK mit ZMK Studio (nice!nano, kabellos)
+
+Alternativ zum Pro Micro mit QMK: ein **nice!nano** auf denselben acht
+Lötpunkten, Firmware in ZMK. Belegung wie oben, aber im Browser änderbar
+(<https://zmk.studio>, Chrome oder Edge) und ohne Speicherproblem — der
+nRF52840 hat 1 MB Flash. Die Dateien liegen im Wurzelverzeichnis
+(`config/`, `boards/`, `build.yaml`), weil ZMKs GitHub-Build sie dort erwartet;
+den Build startet ein Push, die `.uf2` liegt danach unter *Actions → Artifacts*.
+
+| Lötpunkt | Pro-Micro-Pin |
+|---|---|
+| `R0` `R1` `R2` `R3` | 4 · 5 · 6 · 7 |
+| `C0` `C1` `C2` `C3` | A3 (21) · A2 (20) · A1 (19) · A0 (18) |
+
+Der Akku hängt direkt an `B+`/`B−` des nice!nano, die Platine hat keinen
+Anschluss dafür. Zum Umbelegen die Taste unten rechts gedrückt halten und dabei
+die Taste rechts in der dritten Reihe drücken (`&studio_unlock`).
+
 ### Belegung
 
 Grundebene ein Zifferblock, die gedrückt gehaltene Taste unten rechts bringt

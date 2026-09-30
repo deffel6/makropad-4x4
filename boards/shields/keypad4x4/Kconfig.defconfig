@@ -1,0 +1,6 @@
+if SHIELD_KEYPAD4X4
+
+config ZMK_KEYBOARD_NAME
+	default "Keypad 4x4"
+
+endif
