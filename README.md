@@ -95,6 +95,13 @@ Wer nicht selbst übersetzen will, nimmt die fertigen Dateien aus
 [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases) — dafür braucht es
 weder QMK noch ein Terminal. Die Anleitung dazu liegt im selben Ordner.
 
+> **Stand der fertigen Dateien:** Die beiden `.hex` stammen noch von der
+> früheren Belegung (Zifferblock mit Ebenen-Taste unten rechts) und sind nicht
+> neu übersetzt. Die Quellen in `firmware/keypad4x4/` haben bereits die neue
+> Belegung mit 16 freien Tasten. Die Vial-Datei ist trotzdem brauchbar, weil
+> sich dort jede Taste in der App umbelegen lässt. Die `default`-Datei hat die
+> alte feste Belegung, bis sie mit `make keypad4x4:default` neu gebaut wird.
+
 Selbst bauen: `firmware/keypad4x4/` nach `keyboards/` in QMK oder vial-qmk
 kopieren, dann:
 
@@ -132,24 +139,34 @@ den Build startet ein Push, die `.uf2` liegt danach unter *Actions → Artifacts
 | `C0` `C1` `C2` `C3` | A3 (21) · A2 (20) · A1 (19) · A0 (18) |
 
 Der Akku hängt direkt an `B+`/`B−` des nice!nano, die Platine hat keinen
-Anschluss dafür. Zum Umbelegen die Taste unten rechts gedrückt halten und dabei
-die Taste rechts in der dritten Reihe drücken (`&studio_unlock`).
+Anschluss dafür. Studio ist nicht gesperrt (`CONFIG_ZMK_STUDIO_LOCKING=n` in
+`config/keypad4x4.conf`), eine Entsperr-Taste braucht es also nicht und alle 16
+Tasten bleiben frei. Dafür kann jeder Rechner, an dem das Pad per USB hängt,
+die Belegung ändern. Wer das nicht will, setzt die Option auf `y` und legt
+`&studio_unlock` auf eine Taste.
 
 ### Belegung
 
-Grundebene ein Zifferblock, die gedrückt gehaltene Taste unten rechts bringt
-`F13` bis `F24` und die Lautstärke.
+Alle 16 Tasten sind Programmtasten auf einer einzigen Ebene. Keine ist für einen
+Ebenenwechsel oder die Studio-Entsperrung reserviert.
 
 ```
-7  8  9  /            F13 F14 F15 F16
-4  5  6  *            F17 F18 F19 F20
-1  2  3  −            F21 F22 F23 F24
-0  .  ⏎  Fn           🔇  🔉  🔊  —
+F13      F14      F15      F16
+F17      F18      F19      F20
+F21      F22      F23      F24
+Meh+F13  Meh+F14  Meh+F15  Meh+F16
 ```
 
 `F13` bis `F24` gibt es auf keiner gewöhnlichen Tastatur, und genau deshalb
 sind sie brauchbar: Kein Programm belegt sie schon. Werkzeuge wie Hammerspoon
-oder die Kurzbefehle-App können sie frei binden.
+oder die Kurzbefehle-App können sie frei binden. Mehr als zwölf freie F-Tasten
+kennt der USB-Standard nicht, deshalb liegen in der untersten Reihe `F13` bis
+`F16` mit **Meh** (Strg + Umschalt + Alt) — in Hammerspoon `{"ctrl","alt","shift"}`.
+
+Jede Taste lässt sich umbelegen: in ZMK mit Studio im Browser, in der
+Vial-Fassung mit der Vial-App. Die frühere Belegung als Zifferblock mit
+Ebenen-Taste ist damit ersetzt. Wer sie zurück will, legt sie in Studio oder
+Vial wieder an und opfert dafür eine Taste als Ebenenschalter.
 
 ## Ändern
 

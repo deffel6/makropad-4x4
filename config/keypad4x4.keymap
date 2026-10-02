@@ -1,27 +1,28 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+/*
+ * Alle 16 Tasten sind gleichberechtigte Programmtasten - keine ist für
+ * Ebenenwechsel oder Studio-Entsperrung reserviert.
+ *
+ * Reihen 1-3: F13 bis F24, die es auf keiner gewöhnlichen Tastatur gibt.
+ * Reihe 4:    dieselben F13 bis F16 mit Strg+Umschalt+Alt ("Meh"), denn
+ *             mehr als zwölf freie F-Tasten kennt der USB-Standard nicht.
+ *
+ * Umbelegen: im Browser mit ZMK Studio (https://zmk.studio).
+ */
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
 
 		base_layer {
-			display-name = "Zifferblock";
+			display-name = "Programme";
 			bindings = <
-				&kp KP_N7 &kp KP_N8  &kp KP_N9    &kp KP_SLASH
-				&kp KP_N4 &kp KP_N5  &kp KP_N6    &kp KP_MULTIPLY
-				&kp KP_N1 &kp KP_N2  &kp KP_N3    &kp KP_MINUS
-				&kp KP_N0 &kp KP_DOT &kp KP_ENTER &mo 1
-			>;
-		};
-
-		fn_layer {
-			display-name = "F13-F24";
-			bindings = <
-				&kp F13    &kp F14      &kp F15      &kp F16
-				&kp F17    &kp F18      &kp F19      &kp F20
-				&kp F21    &kp F22      &kp F23      &studio_unlock
-				&kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &trans
+				&kp F13              &kp F14              &kp F15              &kp F16
+				&kp F17              &kp F18              &kp F19              &kp F20
+				&kp F21              &kp F22              &kp F23              &kp F24
+				&kp LC(LS(LA(F13)))  &kp LC(LS(LA(F14)))  &kp LC(LS(LA(F15)))  &kp LC(LS(LA(F16)))
 			>;
 		};
 
