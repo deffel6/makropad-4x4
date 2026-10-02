@@ -4,6 +4,13 @@
 Terminal, die [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases)
 genügt.
 
+> **Hinweis:** Beide Dateien sind aus der früheren Belegung gebaut
+> (Zifferblock, Ebenen-Taste unten rechts). Die Quellen enthalten inzwischen
+> 16 freie Programmtasten (F13–F24 und Meh+F13–F16) und sind noch nicht neu
+> übersetzt. `keypad4x4_vial.hex` bleibt nutzbar, weil Vial jede Taste
+> umbelegen lässt. `keypad4x4_default.hex` ist fest und hat noch die alte
+> Belegung, bis sie neu gebaut wird.
+
 | Datei | Größe | Belegung |
 |---|---|---|
 | `keypad4x4_default.hex` | 15.826 Bytes (55 %) | fest eingebaut |

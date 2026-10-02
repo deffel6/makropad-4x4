@@ -27,13 +27,15 @@ in der Ausgabe „Detecting USB port" erscheint.
 
 ## Die beiden Belegungen
 
-**default** — zwei Ebenen, fest eingebaut. Unten liegt ein Zifferblock,
-gedrückt gehaltene Umschalttaste unten rechts bringt `F13` bis `F24` und
-die Lautstärke. Größe: rund 55 % des Speichers.
+**default** — eine einzige Ebene, fest eingebaut. Alle 16 Tasten sind
+Programmtasten: `F13` bis `F24` in den ersten drei Reihen, in der untersten
+`F13` bis `F16` mit Strg+Umschalt+Alt (`MEH`). Keine Taste ist für einen
+Ebenenwechsel reserviert. Größe: nach der früheren Belegung rund 55 % des
+Speichers, die neue Fassung ist noch nicht gemessen.
 
-**vial** — dieselbe Grundbelegung, aber über die Vial-App änderbar, ohne
-neu zu übersetzen. Entsperrt wird mit den beiden oberen linken Tasten
-gleichzeitig.
+**vial** — dieselbe Grundbelegung auf Ebene 0, aber über die Vial-App
+änderbar, ohne neu zu übersetzen. Die Ebenen 1 und 2 sind leer. Entsperrt wird
+mit den beiden oberen linken Tasten gleichzeitig.
 
 ## Warum F13 bis F24
 
