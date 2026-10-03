@@ -114,7 +114,7 @@ Beide Fassungen sind übersetzt und geprüft:
 
 | | Größe | Auslastung |
 |---|---|---|
-| default | 15.826 Bytes | 55 % |
+| default | 15.808 Bytes | 55 % |
 | vial | 28.246 Bytes | 98 % |
 
 Die Vial-Fassung passt nur knapp: Der Pro Micro hat nach Abzug des

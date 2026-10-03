@@ -13,7 +13,7 @@ genügt.
 
 | Datei | Größe | Belegung |
 |---|---|---|
-| `keypad4x4_default.hex` | 15.826 Bytes (55 %) | fest eingebaut |
+| `keypad4x4_default.hex` | 15.808 Bytes (55 %) | fest eingebaut |
 | `keypad4x4_vial.hex` | 28.246 Bytes (98 %) | über Vial änderbar |
 
 ## Welche nehmen
