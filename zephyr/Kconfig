@@ -1,0 +1,14 @@
+config TASTENDRUCK_LED
+	bool "Blaue LED bei Tastendruck kurz aufleuchten lassen"
+	default y
+	help
+	  Schaltet die blaue LED des nice!nano beim Start aus und laesst
+	  sie bei jedem Tastendruck kurz aufleuchten.
+
+config TASTENDRUCK_LED_MS
+	int "Leuchtdauer in Millisekunden"
+	default 40
+	depends on TASTENDRUCK_LED
+	help
+	  40 ms sind als Blitz gut sichtbar, ohne bei schnellem Tippen
+	  zu einem Dauerleuchten zu verschmelzen.

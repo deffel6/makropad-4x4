@@ -2,6 +2,22 @@
 #include <physical_layouts.dtsi>
 
 / {
+	/*
+	 * Blaue LED des nice!nano, P0.15. Sie ist hier eigens aufgefuehrt,
+	 * damit das Modul sie unabhaengig von den Namen des Boards findet.
+	 */
+	tastendruck_leds {
+		compatible = "gpio-leds";
+		status = "okay";
+
+		led_tastendruck: led_tastendruck {
+			gpios = <&gpio0 15 GPIO_ACTIVE_HIGH>;
+			label = "Tastendruck-LED";
+		};
+	};
+};
+
+/ {
 	chosen {
 		zmk,kscan = &kscan0;
 		zmk,physical-layout = &physical_layout0;
