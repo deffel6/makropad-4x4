@@ -2,20 +2,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 /*
- * Alle 16 Tasten senden Strg+Befehl zusammen mit einer Ziffer oder einer
- * F-Taste, fortlaufend von oben links nach unten rechts:
+ * Alle 16 Tasten senden blanke F-Tasten, fortlaufend von oben links nach
+ * unten rechts: F1 bis F16.
  *
- *     Tasten 1-10:  Strg+Befehl + 0 bis 9
- *     Tasten 11-16: Strg+Befehl + F1 bis F6
- *
- * Warum diese Kombination: Strg+Befehl+Ziffer ist auf dem Mac praktisch
- * unbelegt, tippt sich nicht versehentlich und erzeugt - anders als
- * Alt+Ziffer - kein Sonderzeichen. Zuweisen lässt sie sich ohne Zusatz-
- * programm in der Kurzbefehle-App über das Feld "Ausführen mit" oder in
- * den Systemeinstellungen unter Tastaturkurzbefehle.
- *
- * In ZMK heißt Strg links LC(...), die Befehlstaste links LG(...), und die
- * Ziffern heißen N0 bis N9. LC(LG(N0)) ist also Strg+Befehl+0.
+ * Zu beachten: F1 bis F12 sind auf dem Mac nicht frei. Dort liegen je nach
+ * Einstellung Helligkeit, Mission Control, Spotlight, Diktat und Lautstärke.
+ * Wer diese Tasten als Auslöser nutzen will, schaltet in den Systemein-
+ * stellungen unter Tastatur "F1, F2 usw. als Standardfunktionstasten
+ * verwenden" ein - sonst greifen die Systemfunktionen zuerst.
+ * F13 bis F16 sind dagegen unbelegt.
  *
  * ACHTUNG: Diese Datei wirkt erst, wenn in ZMK Studio einmal
  * "Restore Stock Settings" ausgelöst wurde. Sonst gilt weiter die im Keypad
@@ -31,10 +26,10 @@
 		base_layer {
 			display-name = "Programme";
 			bindings = <
-				&kp LC(LG(N0))  &kp LC(LG(N1))  &kp LC(LG(N2))  &kp LC(LG(N3))
-				&kp LC(LG(N4))  &kp LC(LG(N5))  &kp LC(LG(N6))  &kp LC(LG(N7))
-				&kp LC(LG(N8))  &kp LC(LG(N9))  &kp LC(LG(F1))  &kp LC(LG(F2))
-				&kp LC(LG(F3))  &kp LC(LG(F4))  &kp LC(LG(F5))  &kp LC(LG(F6))
+				&kp F1   &kp F2   &kp F3   &kp F4
+				&kp F5   &kp F6   &kp F7   &kp F8
+				&kp F9   &kp F10  &kp F11  &kp F12
+				&kp F13  &kp F14  &kp F15  &kp F16
 			>;
 		};
 
