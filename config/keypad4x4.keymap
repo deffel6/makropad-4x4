@@ -2,21 +2,24 @@
 #include <dt-bindings/zmk/keys.h>
 
 /*
- * Alle 16 Tasten senden Umschalt links + Alt rechts zusammen mit F1 bis F16,
- * fortlaufend von oben links nach unten rechts.
+ * Alle 16 Tasten sind gleichberechtigte Programmtasten - keine ist für
+ * Ebenenwechsel oder Studio-Entsperrung reserviert.
  *
- * Warum diese Kombination: Umschalt+Alt+F-Taste tippt niemand versehentlich,
- * und sie erzeugt kein Zeichen. Jede Taste ist damit ein eindeutiger Auslöser,
- * den sich Hammerspoon, die Kurzbefehle-App oder jedes andere Programm greifen
- * kann, ohne einer normalen Tastatur ins Gehege zu kommen.
+ * Reihen 1-3: F13 bis F24. Diese Tasten gibt es auf keiner gewöhnlichen
+ *             Tastatur, kein Systemkürzel belegt sie, und sie erzeugen kein
+ *             Zeichen - ein Fehldruck im Textfeld bleibt folgenlos.
+ * Reihe 4:    dieselben F13 bis F16 mit Strg+Umschalt+Alt ("Meh"), denn mehr
+ *             als zwölf freie F-Tasten kennt der USB-Standard nicht.
  *
- * Warum F1 bis F16 statt der Ziffern 1 bis 16: Ziffern gibt es nur zehn.
- * F-Tasten reichen bis F24 und lassen sich sauber durchnummerieren.
+ * Ziffern schieden aus: Alt+Ziffer erzeugt auf dem Mac Sonderzeichen wie
+ * ¡ € ¶, die im Text landen, sobald kein Programm das Kürzel abfängt.
+ * F1 bis F12 schieden aus, dort liegen Helligkeit, Lautstärke und
+ * Mission Control.
  *
- * In ZMK heißt Umschalt links LS(...) und Alt rechts RA(...), geschachtelt
- * also LS(RA(F1)). Das entspricht LSFT(RALT(KC_F1)) in QMK.
- *
- * Auf dem Mac ist Alt rechts die rechte Wahltaste (Option).
+ * Belegen lassen sich die Tasten in der Kurzbefehle-App (Feld "Ausführen
+ * mit", dann die Keypad-Taste drücken), in den Systemeinstellungen unter
+ * App-Kurzbefehle, oder in Hammerspoon. Letzteres hat sich als das
+ * zuverlässigste erwiesen.
  *
  * ACHTUNG: Diese Datei wirkt erst, wenn in ZMK Studio einmal
  * "Restore Stock Settings" ausgelöst wurde. Sonst gilt weiter die im Keypad
@@ -32,10 +35,10 @@
 		base_layer {
 			display-name = "Programme";
 			bindings = <
-				&kp LS(RA(F1))   &kp LS(RA(F2))   &kp LS(RA(F3))   &kp LS(RA(F4))
-				&kp LS(RA(F5))   &kp LS(RA(F6))   &kp LS(RA(F7))   &kp LS(RA(F8))
-				&kp LS(RA(F9))   &kp LS(RA(F10))  &kp LS(RA(F11))  &kp LS(RA(F12))
-				&kp LS(RA(F13))  &kp LS(RA(F14))  &kp LS(RA(F15))  &kp LS(RA(F16))
+				&kp F13              &kp F14              &kp F15              &kp F16
+				&kp F17              &kp F18              &kp F19              &kp F20
+				&kp F21              &kp F22              &kp F23              &kp F24
+				&kp LC(LS(LA(F13)))  &kp LC(LS(LA(F14)))  &kp LC(LS(LA(F15)))  &kp LC(LS(LA(F16)))
 			>;
 		};
 
