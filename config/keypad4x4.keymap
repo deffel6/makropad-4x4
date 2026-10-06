@@ -2,24 +2,20 @@
 #include <dt-bindings/zmk/keys.h>
 
 /*
- * Alle 16 Tasten sind gleichberechtigte Programmtasten - keine ist für
- * Ebenenwechsel oder Studio-Entsperrung reserviert.
+ * Alle 16 Tasten senden Strg+Befehl zusammen mit einer Ziffer oder einer
+ * F-Taste, fortlaufend von oben links nach unten rechts:
  *
- * Reihen 1-3: F13 bis F24. Diese Tasten gibt es auf keiner gewöhnlichen
- *             Tastatur, kein Systemkürzel belegt sie, und sie erzeugen kein
- *             Zeichen - ein Fehldruck im Textfeld bleibt folgenlos.
- * Reihe 4:    dieselben F13 bis F16 mit Strg+Umschalt+Alt ("Meh"), denn mehr
- *             als zwölf freie F-Tasten kennt der USB-Standard nicht.
+ *     Tasten 1-10:  Strg+Befehl + 0 bis 9
+ *     Tasten 11-16: Strg+Befehl + F1 bis F6
  *
- * Ziffern schieden aus: Alt+Ziffer erzeugt auf dem Mac Sonderzeichen wie
- * ¡ € ¶, die im Text landen, sobald kein Programm das Kürzel abfängt.
- * F1 bis F12 schieden aus, dort liegen Helligkeit, Lautstärke und
- * Mission Control.
+ * Warum diese Kombination: Strg+Befehl+Ziffer ist auf dem Mac praktisch
+ * unbelegt, tippt sich nicht versehentlich und erzeugt - anders als
+ * Alt+Ziffer - kein Sonderzeichen. Zuweisen lässt sie sich ohne Zusatz-
+ * programm in der Kurzbefehle-App über das Feld "Ausführen mit" oder in
+ * den Systemeinstellungen unter Tastaturkurzbefehle.
  *
- * Belegen lassen sich die Tasten in der Kurzbefehle-App (Feld "Ausführen
- * mit", dann die Keypad-Taste drücken), in den Systemeinstellungen unter
- * App-Kurzbefehle, oder in Hammerspoon. Letzteres hat sich als das
- * zuverlässigste erwiesen.
+ * In ZMK heißt Strg links LC(...), die Befehlstaste links LG(...), und die
+ * Ziffern heißen N0 bis N9. LC(LG(N0)) ist also Strg+Befehl+0.
  *
  * ACHTUNG: Diese Datei wirkt erst, wenn in ZMK Studio einmal
  * "Restore Stock Settings" ausgelöst wurde. Sonst gilt weiter die im Keypad
@@ -35,10 +31,10 @@
 		base_layer {
 			display-name = "Programme";
 			bindings = <
-				&kp F13              &kp F14              &kp F15              &kp F16
-				&kp F17              &kp F18              &kp F19              &kp F20
-				&kp F21              &kp F22              &kp F23              &kp F24
-				&kp LC(LS(LA(F13)))  &kp LC(LS(LA(F14)))  &kp LC(LS(LA(F15)))  &kp LC(LS(LA(F16)))
+				&kp LC(LG(N0))  &kp LC(LG(N1))  &kp LC(LG(N2))  &kp LC(LG(N3))
+				&kp LC(LG(N4))  &kp LC(LG(N5))  &kp LC(LG(N6))  &kp LC(LG(N7))
+				&kp LC(LG(N8))  &kp LC(LG(N9))  &kp LC(LG(F1))  &kp LC(LG(F2))
+				&kp LC(LG(F3))  &kp LC(LG(F4))  &kp LC(LG(F5))  &kp LC(LG(F6))
 			>;
 		};
 
