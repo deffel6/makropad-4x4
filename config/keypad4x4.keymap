@@ -2,15 +2,18 @@
 #include <dt-bindings/zmk/keys.h>
 
 /*
- * Alle 16 Tasten senden blanke F-Tasten, fortlaufend von oben links nach
- * unten rechts: F1 bis F16.
+ * Tasten 1 bis 10:  Strg zusammen mit den Ziffern 0 bis 9.
+ * Tasten 11 bis 16:  F11 bis F16, unverändert aus der vorigen Fassung.
  *
- * Zu beachten: F1 bis F12 sind auf dem Mac nicht frei. Dort liegen je nach
- * Einstellung Helligkeit, Mission Control, Spotlight, Diktat und Lautstärke.
- * Wer diese Tasten als Auslöser nutzen will, schaltet in den Systemein-
+ * Strg+Ziffer erzeugt kein Zeichen und ist auf dem Mac weitgehend frei -
+ * einzelne Programme nutzen es zum Umschalten zwischen Tabs.
+ *
+ * Zu beachten bei F11 und F12: Dort liegen am Mac Lautstärke und Mission
+ * Control. Wer sie als Auslöser braucht, schaltet in den Systemein-
  * stellungen unter Tastatur "F1, F2 usw. als Standardfunktionstasten
- * verwenden" ein - sonst greifen die Systemfunktionen zuerst.
- * F13 bis F16 sind dagegen unbelegt.
+ * verwenden" ein. F13 bis F16 sind frei.
+ *
+ * In ZMK heißt Strg links LC(...), die Ziffern heißen N0 bis N9.
  *
  * ACHTUNG: Diese Datei wirkt erst, wenn in ZMK Studio einmal
  * "Restore Stock Settings" ausgelöst wurde. Sonst gilt weiter die im Keypad
@@ -26,10 +29,10 @@
 		base_layer {
 			display-name = "Programme";
 			bindings = <
-				&kp F1   &kp F2   &kp F3   &kp F4
-				&kp F5   &kp F6   &kp F7   &kp F8
-				&kp F9   &kp F10  &kp F11  &kp F12
-				&kp F13  &kp F14  &kp F15  &kp F16
+				&kp LC(N0)  &kp LC(N1)  &kp LC(N2)  &kp LC(N3)
+				&kp LC(N4)  &kp LC(N5)  &kp LC(N6)  &kp LC(N7)
+				&kp LC(N8)  &kp LC(N9)  &kp F11     &kp F12
+				&kp F13     &kp F14     &kp F15     &kp F16
 			>;
 		};
 
