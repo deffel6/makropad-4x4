@@ -4,17 +4,19 @@
 Terminal, die [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases)
 genügt.
 
-> **Hinweis:** Beide Dateien sind aus der früheren Belegung gebaut
-> (Zifferblock, Ebenen-Taste unten rechts). Die Quellen enthalten inzwischen
-> 16 freie Programmtasten (F13–F24 und Meh+F13–F16) und sind noch nicht neu
-> übersetzt. `keypad4x4_vial.hex` bleibt nutzbar, weil Vial jede Taste
-> umbelegen lässt. `keypad4x4_default.hex` ist fest und hat noch die alte
-> Belegung, bis sie neu gebaut wird.
+Hier liegen drei Dateien: zwei für das Pro-Micro-Keypad (QMK/Vial) und
+eine für das nice!nano-Keypad (ZMK). Welche zu welchem Gerät gehört, steht
+in der Tabelle.
 
-| Datei | Größe | Belegung |
+| Datei | Gerät | Belegung |
 |---|---|---|
-| `keypad4x4_default.hex` | 15.808 Bytes (55 %) | fest eingebaut |
-| `keypad4x4_vial.hex` | 28.246 Bytes (98 %) | über Vial änderbar |
+| `keypad4x4_default.hex` | Pro Micro (ATmega32U4) | fest eingebaut, 15.808 Bytes (55 %) |
+| `keypad4x4_vial.hex` | Pro Micro (ATmega32U4) | über Vial änderbar, 28.246 Bytes (98 %) |
+| `keypad4x4_zmk.uf2` | nice!nano (nRF52840) | über ZMK Studio änderbar |
+
+Die `.uf2` entsteht sonst nur als Artefakt eines GitHub-Actions-Laufs, und
+die verfallen nach einiger Zeit. Deshalb liegt hier eine Kopie des jeweils
+aktuellen Standes.
 
 ## Welche nehmen
 
@@ -24,6 +26,27 @@ ohne je wieder zu flashen.
 **default**, wenn du Vial nicht brauchst. Sie lässt 12 KB frei, in denen
 später Erweiterungen Platz hätten — die Vial-Fassung ist mit 98 Prozent
 randvoll.
+
+## Flashen des nice!nano
+
+Viel einfacher als beim Pro Micro — kein Programm nötig:
+
+1. **Akku abziehen**, nur das USB-Kabel angesteckt lassen
+2. **RST und GND zweimal kurz hintereinander** verbinden, im Takt eines
+   Doppelklicks
+3. Es erscheint ein Laufwerk **NICENANO**
+4. `keypad4x4_zmk.uf2` daraufziehen
+
+Das Board schreibt die Datei selbst, startet neu, und das Laufwerk
+verschwindet. Die Fehlermeldung, die macOS dabei zeigt, gehört dazu: Das
+Board hängt sich mitten im Schreiben selbst aus.
+
+> **Wichtig:** Wurde die Belegung je in ZMK Studio geändert, liegt sie im
+> Speicher des Keypads und **überstimmt die Firmware** — auch nach dem
+> Flashen. Dann in ZMK Studio einmal **"Restore Stock Settings"** auslösen.
+
+Der Akku muss ab, weil der Doppeltipp sonst oft nicht als zwei getrennte
+Resets ankommt.
 
 ## Flashen mit der QMK Toolbox
 
@@ -55,10 +78,10 @@ rechten Stiftleiste nebeneinander.
 ## Prüfsummen
 
 ```
-eb3720195db8c39df6e22be1567f94a749dc5a6ef7856b84c1cad37751bfc8b5  keypad4x4_default.hex
-594e2dab03956e62563ce7720427572946b67d1bedd4205df90dad1dd0f3d2b0  keypad4x4_vial.hex
+995e3e11b5357333569727529e88326333cffb72e6cc32e93cd0ee714375d42d  keypad4x4_default.hex
+bea514d3c68f86d1b647a75fa26ab12ef3849a9da4298091c78cee10ecf70edc  keypad4x4_vial.hex
+9e20bb151ac78a56d79cec0044b7cbb6d23fc76bdfa691837d731a94cf97e753  keypad4x4_zmk.uf2
 ```
 
-Beide Dateien sind gegengelesen: keine Prüfsummenfehler im Intel-HEX-Format,
-und die Vial-Fassung endet bei Adresse `0x6E34` — knapp unter `0x7000`, wo
-der Bootloader beginnt.
+Die Prüfsummen gelten für den Stand vom 8. Oktober 2026. Nach jedem
+Neubau ändern sie sich.
